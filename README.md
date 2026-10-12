@@ -33,7 +33,7 @@ My MangoWM dotfiles.
 Designed for Arch Linux (uses `pacman` and an AUR helper such as `yay` or `paru`).
 
 ```bash
-git clone https://github.com/<your-username>/MangoWM.git
+git clone https://github.com/XimeX0114/MangoWM-dotfiles.git
 cd MangoWM
 python3 install.py
 ```
