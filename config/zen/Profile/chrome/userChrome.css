@@ -1,0 +1,42 @@
+/* wallust template for Zen Browser (userChrome.css) */
+
+:root {
+  --zen-colors-primary: #0E1212 !important;
+  --zen-colors-secondary: #010606 !important;
+  --zen-colors-tertiary: #010606 !important;
+  --zen-colors-border: #77877F !important;
+  --zen-primary-color: #77877F !important;
+  --toolbar-color: #ECC094 !important;
+  --toolbar-bgcolor: #010606 !important;
+  --tab-selected-bgcolor: #77877F !important;
+  --lwt-text-color: #ECC094 !important;
+  --toolbar-field-background-color: #0E1212 !important;
+  --toolbar-field-color: #ECC094 !important;
+  --arrowpanel-background: #0E1212 !important;
+  --arrowpanel-color: #ECC094 !important;
+}
+
+/* Direct overrides for elements that ignore the variables */
+#main-window,
+#browser,
+#navigator-toolbox,
+#nav-bar,
+#TabsToolbar,
+#zen-main-app-wrapper,
+#zen-sidebar-top-buttons {
+  background-color: #010606 !important;
+  color: #ECC094 !important;
+}
+
+#urlbar-background {
+  background-color: #0E1212 !important;
+  border-color: #77877F !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+  background-color: #77877F !important;
+}
+
+.tabbrowser-tab[selected] .tab-label {
+  color: #010606 !important;
+}

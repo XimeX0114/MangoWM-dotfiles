@@ -1,0 +1,44 @@
+@define-color bg      #010606;
+@define-color bg2     #010708;
+@define-color fg      #ECC094;
+@define-color accent  #77877F;
+@define-color urgent  #725E45;
+
+* {
+    background-image: none;
+    box-shadow: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 18px;
+}
+
+window {
+    background-color: alpha(@bg, 0.85);
+}
+
+button {
+    color: @fg;
+    background-color: @bg2;
+    border: 2px solid @accent;
+    border-radius: 12px;
+    margin: 12px;
+    outline-style: none;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 30%;
+}
+#shutdown { background-image: image(url("/home/ximex/.config/wlogout/icons/shutdown.png")); }
+#reboot   { background-image: image(url("/home/ximex/.config/wlogout/icons/reboot.png")); }
+#suspend  { background-image: image(url("/home/ximex/.config/wlogout/icons/suspend.png")); }
+#logout   { background-image: image(url("/home/ximex/.config/wlogout/icons/logout.png")); }
+
+button:hover,
+button:focus {
+    background-color: @accent;
+    color: @bg;
+}
+
+#shutdown:hover,
+#shutdown:focus {
+    background-color: @urgent;
+    border-color: @urgent;
+}

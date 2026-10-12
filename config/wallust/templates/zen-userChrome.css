@@ -1,0 +1,42 @@
+/* wallust template for Zen Browser (userChrome.css) */
+
+:root {
+  --zen-colors-primary: {{background | lighten(0.05)}} !important;
+  --zen-colors-secondary: {{background}} !important;
+  --zen-colors-tertiary: {{background | darken(0.05)}} !important;
+  --zen-colors-border: {{color4}} !important;
+  --zen-primary-color: {{color4}} !important;
+  --toolbar-color: {{foreground}} !important;
+  --toolbar-bgcolor: {{background}} !important;
+  --tab-selected-bgcolor: {{color4}} !important;
+  --lwt-text-color: {{foreground}} !important;
+  --toolbar-field-background-color: {{background | lighten(0.05)}} !important;
+  --toolbar-field-color: {{foreground}} !important;
+  --arrowpanel-background: {{background | lighten(0.05)}} !important;
+  --arrowpanel-color: {{foreground}} !important;
+}
+
+/* Direct overrides for elements that ignore the variables */
+#main-window,
+#browser,
+#navigator-toolbox,
+#nav-bar,
+#TabsToolbar,
+#zen-main-app-wrapper,
+#zen-sidebar-top-buttons {
+  background-color: {{background}} !important;
+  color: {{foreground}} !important;
+}
+
+#urlbar-background {
+  background-color: {{background | lighten(0.05)}} !important;
+  border-color: {{color4}} !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+  background-color: {{color4}} !important;
+}
+
+.tabbrowser-tab[selected] .tab-label {
+  color: {{background}} !important;
+}

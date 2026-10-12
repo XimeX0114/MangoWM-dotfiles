@@ -1,0 +1,87 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    drun-display-format: "{name}";
+    display-drun: "";
+    display-run: "";
+    display-window: "";
+    font: "JetBrainsMono Nerd Font 20";
+}
+
+* {
+    background-color: transparent;
+    text-color: @fg;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 480px;
+    background-color: @bg;
+    border: 1px;
+    border-color: @fg-dim;
+}
+
+mainbox {
+    padding: 12px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    padding: 8px 10px;
+    margin: 0 0 8px 0;
+    spacing: 8px;
+    background-color: @bg-alt;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @fg-dim;
+}
+
+entry {
+    placeholder: "поиск";
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    lines: 8;
+    scrollbar: false;
+    fixed-height: true;
+}
+
+element {
+    padding: 6px 10px;
+    spacing: 10px;
+    background-color: transparent;
+}
+
+element normal.normal,
+element alternate.normal,
+element normal.active,
+element alternate.active,
+element normal.urgent,
+element alternate.urgent {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element selected.normal,
+element selected.active,
+element selected.urgent {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element-icon {
+    size: 1.2em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit;
+}

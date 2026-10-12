@@ -1,0 +1,143 @@
+{
+  "name": "Wallust",
+  "type": "dark",
+  "colors": {
+    "focusBorder": "#{{color4 | strip}}",
+    "foreground": "#{{foreground | strip}}",
+    "descriptionForeground": "#{{color8 | strip}}",
+    "errorForeground": "#{{color1 | strip}}",
+    "icon.foreground": "#{{foreground | strip}}",
+    "selection.background": "#{{color4 | strip}}66",
+
+    "editor.background": "#{{background | strip}}",
+    "editor.foreground": "#{{foreground | strip}}",
+    "editor.selectionBackground": "#{{color4 | strip}}55",
+    "editor.lineHighlightBackground": "#{{color0 | strip}}",
+    "editor.findMatchBackground": "#{{color3 | strip}}55",
+    "editorCursor.foreground": "#{{color4 | strip}}",
+    "editorLineNumber.foreground": "#{{color8 | strip}}",
+    "editorLineNumber.activeForeground": "#{{foreground | strip}}",
+    "editorIndentGuide.background1": "#{{color8 | strip}}55",
+    "editorWhitespace.foreground": "#{{color8 | strip}}55",
+    "editorGroup.border": "#{{color8 | strip}}",
+    "editorGroupHeader.tabsBackground": "#{{background | strip}}",
+
+    "tab.activeBackground": "#{{color0 | strip}}",
+    "tab.activeForeground": "#{{foreground | strip}}",
+    "tab.activeBorderTop": "#{{color4 | strip}}",
+    "tab.inactiveBackground": "#{{background | strip}}",
+    "tab.inactiveForeground": "#{{color8 | strip}}",
+    "tab.border": "#{{background | strip}}",
+
+    "activityBar.background": "#{{background | strip}}",
+    "activityBar.foreground": "#{{color4 | strip}}",
+    "activityBar.inactiveForeground": "#{{color8 | strip}}",
+    "activityBarBadge.background": "#{{color4 | strip}}",
+    "activityBarBadge.foreground": "#{{background | strip}}",
+
+    "sideBar.background": "#{{background | strip}}",
+    "sideBar.foreground": "#{{foreground | strip}}",
+    "sideBar.border": "#{{color8 | strip}}",
+    "sideBarTitle.foreground": "#{{color4 | strip}}",
+    "sideBarSectionHeader.background": "#{{color0 | strip}}",
+
+    "list.activeSelectionBackground": "#{{color4 | strip}}",
+    "list.activeSelectionForeground": "#{{background | strip}}",
+    "list.inactiveSelectionBackground": "#{{color0 | strip}}",
+    "list.hoverBackground": "#{{color0 | strip}}",
+    "list.highlightForeground": "#{{color4 | strip}}",
+
+    "statusBar.background": "#{{color0 | strip}}",
+    "statusBar.foreground": "#{{foreground | strip}}",
+    "statusBar.noFolderBackground": "#{{color0 | strip}}",
+    "statusBar.debuggingBackground": "#{{color1 | strip}}",
+
+    "titleBar.activeBackground": "#{{background | strip}}",
+    "titleBar.activeForeground": "#{{foreground | strip}}",
+    "titleBar.inactiveBackground": "#{{background | strip}}",
+    "titleBar.inactiveForeground": "#{{color8 | strip}}",
+
+    "menu.background": "#{{background | strip}}",
+    "menu.foreground": "#{{foreground | strip}}",
+    "menu.selectionBackground": "#{{color4 | strip}}",
+    "menu.selectionForeground": "#{{background | strip}}",
+
+    "panel.background": "#{{background | strip}}",
+    "panel.border": "#{{color8 | strip}}",
+    "panelTitle.activeBorder": "#{{color4 | strip}}",
+    "panelTitle.activeForeground": "#{{foreground | strip}}",
+
+    "input.background": "#{{color0 | strip}}",
+    "input.foreground": "#{{foreground | strip}}",
+    "input.border": "#{{color8 | strip}}",
+    "dropdown.background": "#{{color0 | strip}}",
+    "dropdown.foreground": "#{{foreground | strip}}",
+    "button.background": "#{{color4 | strip}}",
+    "button.foreground": "#{{background | strip}}",
+    "button.hoverBackground": "#{{color5 | strip}}",
+    "badge.background": "#{{color4 | strip}}",
+    "badge.foreground": "#{{background | strip}}",
+
+    "scrollbarSlider.background": "#{{color8 | strip}}55",
+    "scrollbarSlider.hoverBackground": "#{{color8 | strip}}88",
+    "scrollbarSlider.activeBackground": "#{{color4 | strip}}88",
+
+    "terminal.background": "#{{background | strip}}",
+    "terminal.foreground": "#{{foreground | strip}}",
+    "terminalCursor.foreground": "#{{color4 | strip}}",
+    "terminal.ansiBlack": "#{{color0 | strip}}",
+    "terminal.ansiRed": "#{{color1 | strip}}",
+    "terminal.ansiGreen": "#{{color2 | strip}}",
+    "terminal.ansiYellow": "#{{color3 | strip}}",
+    "terminal.ansiBlue": "#{{color4 | strip}}",
+    "terminal.ansiMagenta": "#{{color5 | strip}}",
+    "terminal.ansiCyan": "#{{color6 | strip}}",
+    "terminal.ansiWhite": "#{{color7 | strip}}",
+    "terminal.ansiBrightBlack": "#{{color8 | strip}}",
+    "terminal.ansiBrightRed": "#{{color9 | strip}}",
+    "terminal.ansiBrightGreen": "#{{color10 | strip}}",
+    "terminal.ansiBrightYellow": "#{{color11 | strip}}",
+    "terminal.ansiBrightBlue": "#{{color12 | strip}}",
+    "terminal.ansiBrightMagenta": "#{{color13 | strip}}",
+    "terminal.ansiBrightCyan": "#{{color14 | strip}}",
+    "terminal.ansiBrightWhite": "#{{color15 | strip}}"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": { "foreground": "#{{color8 | strip}}", "fontStyle": "italic" }
+    },
+    {
+      "scope": ["keyword", "storage", "storage.type"],
+      "settings": { "foreground": "#{{color4 | strip}}" }
+    },
+    {
+      "scope": ["string", "string.quoted"],
+      "settings": { "foreground": "#{{color2 | strip}}" }
+    },
+    {
+      "scope": ["constant.numeric", "constant.language", "constant"],
+      "settings": { "foreground": "#{{color3 | strip}}" }
+    },
+    {
+      "scope": ["entity.name.function", "support.function", "meta.function-call"],
+      "settings": { "foreground": "#{{color5 | strip}}" }
+    },
+    {
+      "scope": ["entity.name.type", "entity.name.class", "support.type", "support.class"],
+      "settings": { "foreground": "#{{color6 | strip}}" }
+    },
+    {
+      "scope": ["variable", "variable.other"],
+      "settings": { "foreground": "#{{foreground | strip}}" }
+    },
+    {
+      "scope": ["keyword.operator", "punctuation"],
+      "settings": { "foreground": "#{{color7 | strip}}" }
+    },
+    {
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": { "foreground": "#{{color1 | strip}}" }
+    }
+  ]
+}

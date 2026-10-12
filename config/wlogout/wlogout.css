@@ -1,0 +1,37 @@
+@define-color bg      #{{background | strip}};
+@define-color bg2     #{{color0 | strip}};
+@define-color fg      #{{foreground | strip}};
+@define-color accent  #{{color4 | strip}};
+@define-color urgent  #{{color1 | strip}};
+
+* {
+    background-image: none;
+    box-shadow: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 18px;
+}
+
+window {
+    background-color: alpha(@bg, 0.85);
+}
+
+button {
+    color: @fg;
+    background-color: @bg2;
+    border: 2px solid @accent;
+    border-radius: 12px;
+    margin: 12px;
+    outline-style: none;
+}
+
+button:hover,
+button:focus {
+    background-color: @accent;
+    color: @bg;
+}
+
+#shutdown:hover,
+#shutdown:focus {
+    background-color: @urgent;
+    border-color: @urgent;
+}

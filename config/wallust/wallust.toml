@@ -1,0 +1,63 @@
+# wallust v3.5
+#
+# You can copy this file to ~/.config/wallust/wallust.toml (keep in mind is a sample config)
+
+# SIMPLE TUTORIAL, or `man wallust.5`:
+# https://explosion-mental.codeberg.page/wallust/
+#
+# If comming from v2: https://explosion-mental.codeberg.page/wallust/v3.html#wallusttoml
+
+# Global section - values below can be overwritten by command line flags
+
+# How the image is parse, in order to get the colors:
+# full - resized - wal - thumb -  fastresize - kmeans
+backend = "fastresize"
+
+fallback_generator = "interpolate"
+threshold = 5
+
+
+# What color space to use to produce and select the most prominent colors:
+# lab - labmixed - lch - lchmixed - salience
+color_space = "salience"
+
+# Use the most prominent colors in a way that makes sense, a scheme color palette:
+# dark - dark16 - darkcomp - darkcomp16
+# light - light16 - lightcomp - lightcomp16
+# harddark - harddark16 - harddarkcomp - harddarkcomp16
+# softdark - softdark16 - softdarkcomp - softdarkcomp16
+# softlight - softlight16 - softlightcomp - softlightcomp16
+# saliencedark - saliencedarkbalanced - saliencedarkdistributed - saliencedarklow (each has the 16 variations)
+# salienceligh - saliencelightbalanced - saliencelightdistributed - saliencelightlow (each has the 16 variations)
+palette = "saliencedark"
+
+# Ensures a "readable contrast" (OPTIONAL, disabled by default)
+# Should only be enabled when you notice an unreadable contrast frequently happening
+# with your images. The reference color for the contrast is the background color.
+#check_contrast = true
+
+# Color saturation, between [1% and 100%] (OPTIONAL, disabled by default)
+# usually something higher than 50 increases the saturation and below
+# decreases it (on a scheme with strong and vivid colors)
+#saturation = 35
+
+# Alpha value for templating, by default 100 (no other use whatsoever)
+#alpha = 100
+
+# Disables hooks completly
+#no_hooks = true
+
+[templates]
+rofi = { template = "rofi-colors.rasi", target = "~/.config/rofi/colors.rasi"}
+mango = { template = "mango-colors.conf", target="~/.config/mango/colors.conf"}
+rootcolor = { template = "rootcolor", target="/home/ximex/.cache/wallust/rootcolor"}
+waybar = { template = "waybar-colors.css", target="/home/ximex/.config/waybar/colors.css"}
+wlogout = { template = "wlogout.css", target="/home/ximex/.config/wlogout/style.css"}
+vscodium = {template = "vscodium-theme.json", target="/home/ximex/.vscode-oss/extensions/local.wallust-theme-1.0.0/themes/wallust-color-theme.json"}
+gtk4 = {template = "gtk.css", target = "~/.config/gtk-4.0/gtk.css"}
+zen = {template = "zen-userChrome.css", target="~/.config/zen/u5nqycgm.Default (release)/chrome/userChrome.css"}
+gedit = { template = "gedit.xml", target = "~/.local/share/libgedit-gtksourceview-300/styles/wallust.xml" }
+
+[hooks]
+# Run commands when wallust is invoked. Useful to avoid scripting.
+#wallpaper = """swww img "$(find ~/Media/Pictures/Wallpapers -iregex '.*.\\(jpg\\|jpeg\\|png\\|gif\\)' -type f | shuf -n 1)" """

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme kind="dark" id="wallust" name="Wallust">
+  <style name="text" foreground="{{foreground}}" background="{{background}}"/>
+  <style name="cursor" foreground="{{cursor}}"/>
+  <style name="selection" background="{{color8}}"/>
+  <style name="current-line" background="{{color0}}"/>
+  <style name="line-numbers" foreground="{{color8}}" background="{{background}}"/>
+  <style name="def:comment" foreground="{{color8}}" italic="true"/>
+  <style name="def:string" foreground="{{color2}}"/>
+  <style name="def:keyword" foreground="{{color5}}"/>
+  <style name="def:type" foreground="{{color4}}"/>
+  <style name="def:number" foreground="{{color3}}"/>
+  <style name="def:function" foreground="{{color6}}"/>
+  <style name="def:constant" foreground="{{color1}}"/>
+</style-scheme>

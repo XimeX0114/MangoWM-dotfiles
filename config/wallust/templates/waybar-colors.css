@@ -1,0 +1,5 @@
+@define-color background #{{background | strip}};
+@define-color foreground #{{foreground | strip}};
+@define-color accent #{{color4 | strip}};
+@define-color urgent #{{color1 | strip}};
+@define-color muted #{{color8 | strip}};
